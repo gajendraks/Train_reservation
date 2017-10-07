@@ -60,3 +60,6 @@ struct detail* getdetails(int pnr)
     return d;
 
 }
+
+
+//write functions 
