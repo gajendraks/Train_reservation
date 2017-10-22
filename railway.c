@@ -11,7 +11,7 @@ struct bogee
     int n_lower[20];
 }
 struct Train{
-    int number;train number
+    int number;//train number
     // int general;//total seats in general class
     // int sleeper;//total seats in sleeper class
     struct bogee AC1;//total seats in first class
@@ -36,27 +36,9 @@ struct detail
     char food_type;
     char class[20];
     int pnr;
+    int train_no;
+    int price;
 }
 
-struct detail* getdetails(int pnr)
-{
-    struct detail *d;
-    d=(struct detail*)malloc(sizeof(struct node));
-    printf("enter your name");
-    scanf("%s",d->name);
-    printf("enter your age");
-    scanf("%d",&(d->age));
-    printf("enter your gender M/F");
-    scanf("%c",&(d->gender));
-    printf("enter your source train departure station code");
-    scanf("%s",d->source);
-    printf("enter your train destination station code");
-    scanf("%s",d->destination);
-    printf("enter your food_type V/N");
-    scanf("%c",&(d->food_type));
-    printf("enter your class AC1/AC2/AC3");
-    scanf("%s",d->class);
-    d->pnr=pnr;
-    return d;
 
-}
+

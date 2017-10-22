@@ -2,6 +2,8 @@ int main()
 {
     printf("Welcome to Railway Resrevation\n");
     // struct detail *d[100];
+
+
     while(1)
     {
         printf("enter your choice:\n
@@ -12,17 +14,25 @@ int main()
         5.Exit\n
         ")
         //1.doubly linked list(insert_tail).
-        //2,Binary_search_tree.
+        //2,Binary_search_tree. 
         //3.doubly linked list(delete_node).
         //4.traversing array and evaluating functions.
+        
+        
         scanf("%d",&ch);
         switch(ch)
         {
             case 1: static int pnr=-1;
+                    // pnr=
                     pnr++;
+
                     struct detail *d;
                     d=getdetails(pnr);
-                    enque_booking(&d,pnr);//queue formation using 
+                    int train_no=gettrain(d->source,d->destination);
+                    d->train_no=train_no;
+
+
+                    enque_booking(&d,);//queue formation using 
                     printf("your pnr is %d\n",pnr);
                     
             case 2: printf("enter your pnr");
